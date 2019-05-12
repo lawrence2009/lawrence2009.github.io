@@ -93,6 +93,19 @@ $(document).ready(function () {
             }
         }
     });
+	$('.wedding').magnificPopup({
+        type:'image',
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300,
+            opener: function(element) {
+                return element.find('img');
+            }
+        }
+    });
     $('.view2').magnificPopup({
         type:'image',
         gallery: {
